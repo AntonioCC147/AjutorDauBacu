@@ -1,0 +1,44 @@
+.footerContainer {
+    padding: 3%;
+    padding-bottom: 1%;
+
+    background-color: #4E6BFF;
+}
+
+.footerCards {
+    width: 350px;
+}
+
+.footerTitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    color: #181C31;
+}
+
+.footerText {
+    font-size: 1rem;
+    line-height: 0.75;
+
+    color: #E6E6E6;
+}
+
+.footerText:hover {
+    color: #181C31;
+}
+
+.footerParagraph {
+    font-size: 1rem;
+
+    color: #E6E6E6;
+}
+
+.footerLogoImage {
+    margin: 10px;
+
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}

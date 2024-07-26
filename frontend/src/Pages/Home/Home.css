@@ -1,0 +1,40 @@
+.homeContainer {
+    margin-top: 75px;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    min-height: calc(100vh - 75px);
+}
+
+.homeTitle {
+    margin-top: 75px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.homeSubTitle {
+    margin-top: 25px;
+
+    font-size: 1.2rem;
+    
+    color: #79808A;
+}
+
+.heroSectionImage {
+    margin-top: 15%;
+
+    width: 100%;
+}
+
+.homeButton {
+    margin-top: 25px;
+
+    height: 50px;
+    width: 200px;
+
+    border-radius: 25px;
+    
+    font-weight: bold;
+}
