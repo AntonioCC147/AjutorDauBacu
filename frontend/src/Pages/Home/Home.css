@@ -1,9 +1,16 @@
 .homeContainer {
     margin-top: 75px;
-    padding-left: 3%;
-    padding-right: 3%;
+}
+
+.homeContainerHeroSection, .homeContainerWhyUs, .homeContainerBenefits {
+    padding-left: 10%;
+    padding-right: 10%;
 
     min-height: calc(100vh - 75px);
+}
+
+.homeContainerWhyUs {
+    background-color: #F4F7FA;
 }
 
 .homeTitle {
@@ -12,6 +19,13 @@
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
+}
+
+.homeTitle2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+    color: #4E6BFF;
 }
 
 .homeSubTitle {
@@ -23,9 +37,13 @@
 }
 
 .heroSectionImage {
-    margin-top: 15%;
-
     width: 100%;
+}
+
+.whyUsImage {
+    width: 80%;
+
+    border-radius: 10px;
 }
 
 .homeButton {
@@ -37,4 +55,75 @@
     border-radius: 25px;
     
     font-weight: bold;
+}
+
+.blueButton {
+    width: 50px;
+}
+
+.blueButton:hover {
+    transform: scale(1.1);
+}
+
+.buttonTitle {
+    margin-left: 25px;
+
+    font-size: 1.2rem;
+}
+
+.buttonTitle:hover {
+    color: #4E6BFF;
+}
+
+a {
+    color: #181C31 !important;
+}
+
+.homeCards {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.stepsTitle {
+    margin-right: 25px;
+
+    font-size: 1rem;
+}
+
+.cardsButton {
+    width: 175px;
+    height: 50px;
+
+    border-radius: 25px;
+}
+
+.rightArrow {
+    margin-bottom: 10px;
+    margin-right: 25px;
+
+    width: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+    .homeTitle, .homeSubTitle, .homeTitle2 {
+        text-align: center;
+    }
+
+    .homeButtonContainer, .hrefContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeTitle2, .whyUsImage {
+        margin-top: 25px;
+    }
+    
+    .homeButtonContainer, .heroSectionImage, .hrefContainer {
+        margin-bottom: 25px;
+    }
+
+    .stepsTitle, .rightArrow {
+        margin-right: 0px;
+    }
 }

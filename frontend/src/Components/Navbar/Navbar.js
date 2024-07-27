@@ -51,8 +51,8 @@ export default function NavbarComponent() {
                             <Nav.Link href="/" className={`navbarText ${scrolling ? 'scrolled' : ''}`}>Acasă</Nav.Link>
                             <Nav.Link href="/despre" className="navbarText">Despre noi</Nav.Link>
                             <Nav.Link href="#services" className="navbarText">Simulări</Nav.Link>
+                            <Nav.Link href="#pricing" className="navbarText">Prețuri</Nav.Link>
                             <Nav.Link href="#portofolio" className="navbarText">Regulament</Nav.Link>
-                            <Nav.Link href="#pricing" className="navbarText">Preț</Nav.Link>
                             <Nav.Link href="#contact" className="navbarText">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

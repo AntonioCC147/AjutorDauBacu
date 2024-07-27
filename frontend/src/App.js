@@ -18,7 +18,7 @@ export default function App() {
                     <Route path="/despre" element={<About/>}/>
                 </Routes>
             </Router>
-            <Footer/>
+            
         </>
     )
 }
