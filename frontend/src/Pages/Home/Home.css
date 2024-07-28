@@ -2,14 +2,14 @@
     margin-top: 75px;
 }
 
-.homeContainerHeroSection, .homeContainerWhyUs, .homeContainerBenefits {
+.homeContainerHeroSection, .homeContainerWhyUs, .homeContainerBenefits, .homeContainerPricing, .homeContainerFAQ {
     padding-left: 10%;
     padding-right: 10%;
 
     min-height: calc(100vh - 75px);
 }
 
-.homeContainerWhyUs {
+.homeContainerWhyUs, .homeContainerPricing {
     background-color: #F4F7FA;
 }
 
@@ -19,6 +19,8 @@
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
+
+    color: #293651;
 }
 
 .homeTitle2 {
@@ -69,6 +71,7 @@
     margin-left: 25px;
 
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .buttonTitle:hover {
@@ -94,6 +97,8 @@ a {
     width: 175px;
     height: 50px;
 
+    font-weight: 600;
+
     border-radius: 25px;
 }
 
@@ -102,6 +107,165 @@ a {
     margin-right: 25px;
 
     width: 30px;
+}
+
+.containerShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.title1Pricing {
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+    color: #4E6BFF;
+}
+
+.title2Pricing {
+    margin-top: 50px;
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+    color: #293651;
+}
+
+.containerBoxPricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardBoxPricing {
+    margin: 15px;
+    padding: 30px;
+
+    width: 375px;
+    height: 550px;
+
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgb(240, 240, 240);
+
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.cardBoxPricing:hover {
+    background-color: #4E6BFF;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    font-weight: bolder;
+
+    color: #293651;
+}
+
+.cardPrice {
+    font-size: 2.3rem;
+    font-weight: bolder;
+
+    color: #4E6BFF;
+}
+
+.cardBoxPricing:hover .cardTitle {
+    color: #FFFFFF;
+}
+
+.cardBoxPricing:hover .cardPrice {
+    color: #293651;
+}
+
+.cardTextBenefits {
+    font-size: 1rem;
+
+    color: #79808A;
+}
+
+.cardDescription {
+    color: #293651;
+}
+
+.cardBoxPricing:hover .cardTextBenefits {
+    color: #FFFFFF;
+}
+
+.imageVerify {
+    width: 20px;
+
+    margin-right: 5%;
+}
+
+.buttonPricing {
+    margin-top: 10px;
+    padding: 15px 35px 15px 35px !important;
+
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+
+    color: #F9F9F9 !important;
+    border-radius: 50px !important;
+    border-color: #4E6BFF !important;
+    background-color: #4E6BFF !important;
+}
+
+.cardBoxPricing:hover .buttonPricing {
+    background-color: #FFFFFF !important;
+    color: #4E6BFF !important;
+}
+
+.pricingContainerWrapper {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pricingContainerWrapperVisible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.accordion-header {
+    background-color: transparent;
+}
+
+.accordion-item:first-of-type, .accordion-item:not(:first-of-type) {
+    border-radius: 20px !important;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+
+    border-radius: 20px;
+
+    color: #FFFFFF;
+    background-color: #4E6BFF !important;
+}
+
+.accordionContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.accordionCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 1.1rem;
+    color: #293651;
 }
 
 @media only screen and (max-width: 990px) {
@@ -115,7 +279,7 @@ a {
         align-items: center;
     }
 
-    .homeTitle2, .whyUsImage {
+    .homeTitle2, .whyUsImage, .title2Pricing {
         margin-top: 25px;
     }
     
@@ -125,5 +289,11 @@ a {
 
     .stepsTitle, .rightArrow {
         margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .cardBoxPricing {
+        height: 650px;
     }
 }

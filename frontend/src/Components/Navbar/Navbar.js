@@ -5,8 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-
 import './Navbar.css';
 
 export default function NavbarComponent() {
@@ -49,11 +47,11 @@ export default function NavbarComponent() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className={`me-auto navbarCenter ${scrolling ? 'scrolled' : ''}`}>
                             <Nav.Link href="/" className={`navbarText ${scrolling ? 'scrolled' : ''}`}>Acasă</Nav.Link>
-                            <Nav.Link href="/despre" className="navbarText">Despre noi</Nav.Link>
-                            <Nav.Link href="#services" className="navbarText">Simulări</Nav.Link>
-                            <Nav.Link href="#pricing" className="navbarText">Prețuri</Nav.Link>
-                            <Nav.Link href="#portofolio" className="navbarText">Regulament</Nav.Link>
-                            <Nav.Link href="#contact" className="navbarText">Contact</Nav.Link>
+                            <Nav.Link href="/despre" className="navbarText">Echipă & Despre noi</Nav.Link>
+                            <Nav.Link href="/#simulari" className="navbarText">Simulări & Prețuri</Nav.Link>
+                            <Nav.Link href="/#faq" className="navbarText">FAQ</Nav.Link>
+                            <Nav.Link href="/regulament" className="navbarText">Regulament</Nav.Link>
+                            <Nav.Link href="/contact" className="navbarText">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -2,6 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
 
 import HeroSection from '../../assets/images/HeroSection.png';
 import Examen2 from '../../assets/images/Examen2.svg';
@@ -10,6 +11,7 @@ import Subiect from '../../assets/images/Subiect.jpg';
 import Barem from '../../assets/images/Barem.jpg';
 import Feedback from '../../assets/images/Feedback.jpg';
 import RightArrow from "../../assets/icons/RightArrow.png";
+import Verify from '../../assets/icons/Verify.png';
 
 import './Home.css';
 
@@ -37,9 +39,9 @@ export default function Home() {
                     <p className="homeTitle" style={{marginTop: "50px"}}>Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     <p className="homeSubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.</p>
                     <div className="hrefContainer">
-                        <a href="/simulare" className="d-flex align-items-center">
+                        <a href="/#simulari" className="d-flex align-items-center">
                             <img src={BlueButton} className="blueButton" alt="Button"/>
-                            <p className="mb-0 ml-2 buttonTitle">ÎNCEARCĂ SIMULAREA NOASTRĂ</p>
+                            <p className="mb-0 ml-2 buttonTitle">ÎNCEARCĂ SIMULĂRILE NOASTRĂ</p>
                         </a>
                     </div>
                 </Col>
@@ -98,6 +100,164 @@ export default function Home() {
                         </Card.Body>
                     </Card>
                 </Col>
+            </Row>
+            <Row className="homeContainerPricing text-center" id="simulari">
+                <p className="title2Pricing" style={{ textAlign: "center" }}>Simulări & Prețuri</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}>Iată ce îți oferim</p>
+                <div className="containerBoxPricing pricingContainerWrapperVisible">
+                    <div class="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
+                        <p className="cardTitle">Simulare Română</p>
+                        <p className="cardPrice">Coming Soon...</p>
+                        <p className="cardDescription">Subiectul conține toată materia pentru clasa a XII-a</p>
+                        <hr/>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">subiect complet</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">exerciții de antrenament</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">profil uman / real</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">barem inclus</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">feedback personalizat</span>
+                        </div>
+                        <div className="text-center">
+                            <Button disabled className="buttonPricing" href="/">Înscrie-te</Button>
+                        </div>
+                    </div>
+                    <div class="cardBoxPricing" style={{marginTop: "25px", marginBottom: "50px"}}>
+                        <p className="cardTitle">Simulare Informatică</p>
+                        <p className="cardPrice">35 LEI</p>
+                        <p className="cardDescription">Subiectul conține toată materia pentru clasele IX-XI</p>
+                        <hr/>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">subiect complet</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">exerciții de antrenament</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">specializarea matematică-informatică</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">barem inclus</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">feedback personalizat</span>
+                        </div>
+                        <div className="text-center">
+                            <Button className="buttonPricing" href="/">Înscrie-te</Button>
+                        </div>
+                    </div>
+                    <div className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
+                        <p className="cardTitle">Simulare Matematică</p>
+                        <p className="cardPrice">Coming Soon...</p>
+                        <p className="cardDescription">Subiectul conține toată materia pentru clasele IX-XII</p>
+                        <hr/>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">subiect complet</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">exerciții de antrenament</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">profil real</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">barem inclus</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">feedback personalizat</span>
+                        </div>
+                        <div className="text-center">
+                            <Button disabled className="buttonPricing" href="/">Înscrie-te</Button>
+                        </div>
+                    </div>
+                    <div className="text-center">
+                        <Button variant="primary" className="cardsButton" style={{width: "225px", height: "50px", marginBottom: "50px"}}>Citește Regulamentul</Button>
+                    </div>
+                </div>
+            </Row>
+            <Row className="homeContainerFAQ" id="faq" style={{marginBottom: "50px"}}>
+                <p className="title2Pricing" style={{ textAlign: "center" }}>FAQ</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}>Răspunsul la cel mai adresate întrebări</p>
+                <Accordion defaultActiveKey="1" className="accordionContainer">
+                    <Accordion.Item eventKey="1" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="3" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="4" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="5" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="6" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="7" className="accordionCard">
+                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Body>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
             </Row>
         </div>
     )

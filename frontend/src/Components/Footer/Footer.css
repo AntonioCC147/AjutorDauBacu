@@ -1,6 +1,4 @@
 .footerContainer {
-    margin-top: 50px;
-
     padding: 3%;
     padding-bottom: 1%;
 
@@ -13,9 +11,9 @@
 
 .footerTitle {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 500;
 
-    color: #181C31;
+    color: #293651;
 }
 
 .footerText {
@@ -26,7 +24,7 @@
 }
 
 .footerText:hover {
-    color: #181C31;
+    color: #293651;
 }
 
 .footerParagraph {

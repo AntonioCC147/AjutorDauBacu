@@ -1,0 +1,51 @@
+.contactContainer {
+    margin-top: 75px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    min-height: calc(100vh - 75px);
+
+    background-color: #F4F7FA;
+
+    align-items: center;
+}
+
+.contactTitle {
+    padding-top: 25px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #293651;
+}
+
+.contactCards {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding: 50px;
+
+    min-height: 475px;
+
+    border-radius: 15px;
+
+    background-color: #FFFFFF;
+}
+
+.titleContact {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    color: #293651;
+}
+
+.subTitleContact {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+
+    color: #79808A;
+}

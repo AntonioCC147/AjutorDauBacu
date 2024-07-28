@@ -68,3 +68,16 @@
     
     color: #79808A;
 }
+
+.aboutDescription {
+    margin-top: 10px;
+
+    font-size: 1rem;
+
+    text-align: justify;
+}
+
+.indent {
+    display: inline-block;
+    margin-left: 50px;
+}

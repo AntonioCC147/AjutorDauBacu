@@ -31,7 +31,7 @@ export default function Footer() {
                 </div>
             </div>
             <hr/>
-            <div>
+            <div style={{color: "#293651"}}>
                 <b>© {new Date().getFullYear()} Copyright | Echipa Ajutor! Dau Bacu' | Toate drepturile sunt rezervate</b>
             </div>
         </div>
