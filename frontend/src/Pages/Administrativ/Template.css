@@ -1,0 +1,36 @@
+.templateContainer {
+    margin-top: 75px;
+    padding-bottom: 50px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    min-height: calc(100vh - 75px);
+
+    background-color: #F4F7FA;
+}
+
+.templateTitle {
+    padding-top: 50px;
+    margin-bottom: 0px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    color: #293651;
+}
+
+.templateText {
+    margin-top: 50px;
+
+    font-size: 1.3rem;
+    text-align: justify;
+
+    color: #79808A;
+}
+
+.indent {
+    display: inline-block;
+    margin-left: 50px;
+}

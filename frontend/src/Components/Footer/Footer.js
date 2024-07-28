@@ -13,16 +13,18 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Pagini Utile</p>
-                    <a href="/despre"><p className="footerText">Echipă & Despre noi</p></a>
+                    <a href="/despre"><p className="footerText">Despre noi</p></a>
+                    <a href="/editii"><p className="footerText">Ediții</p></a>
                     <a href="/#simulari"><p className="footerText">Simulări & Prețuri</p></a>
                     <a href="/#faq"><p className="footerText">FAQ</p></a>
                     <a href="/contact"><p className="footerText">Contact</p></a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Legale</p>
-                    <a href="/"><p className="footerText">Regulament</p></a>
-                    <a href="/"><p className="footerText">Termeni și Condiții</p></a>
-                    <a href="/"><p className="footerText">Politica de Confidențialitate</p></a>
+                    <a href="/inscriete"><p className="footerText">Înscrie-te</p></a>
+                    <a href="/regulament"><p className="footerText">Regulament</p></a>
+                    <a href="/termenisiconditii"><p className="footerText">Termeni și Condiții</p></a>
+                    <a href="/politicaconfidentialitate"><p className="footerText">Politica de Confidențialitate</p></a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Administrativ</p>

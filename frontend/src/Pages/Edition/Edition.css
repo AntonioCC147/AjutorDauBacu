@@ -5,6 +5,8 @@
     padding-right: 10%;
 
     min-height: calc(100vh - 75px);
+
+    background-color: #F4F7FA;
 }
 
 .editionTitle {

@@ -7,8 +7,10 @@ import NavbarComponent from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import About from "./Pages/About/About";
 import Edition from "./Pages/Edition/Edition";
-import Rules from "./Pages/Rules/Rules";
 import Contact from "./Pages/Contact/Contact";
+import Rules from "./Pages/Administrativ/Rules/Rules";
+import Terms from "./Pages/Administrativ/Terms/Terms";
+import Politics from "./Pages/Administrativ/Politics/Politics";
 import Footer from "./Components/Footer/Footer";
 
 export default function App() {
@@ -21,6 +23,8 @@ export default function App() {
                     <Route path="/despre" element={<About/>}/>
                     <Route path="/editii" element={<Edition/>}/>
                     <Route path="/regulament" element={<Rules/>}/>
+                    <Route path="/termenisiconditii" element={<Terms/>}/>
+                    <Route path="/politicaconfidentialitate" element={<Politics/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
             </Router>
