@@ -1,0 +1,51 @@
+.editionContainer {
+    margin-top: 75px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    min-height: calc(100vh - 75px);
+}
+
+.editionTitle {
+    padding-top: 50px;
+    margin-bottom: 0px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    color: #293651;
+}
+
+.editionSubTitle {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    font-size: 1.2rem;
+    text-align: center;
+    
+    color: #79808A;
+}
+
+.editionDateTitle {
+    margin-bottom: 0px;
+
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    color: #4E6BFF;
+}
+
+.editionSubjectTitle {
+    margin-top: 0px;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    color: #293651;
+}
+
+.subjectLink:hover {
+    color: #4E6BFF!important;
+}

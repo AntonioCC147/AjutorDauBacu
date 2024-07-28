@@ -63,7 +63,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerBenefits d-flex align-items-center justify-content-center" >
                 <p className="homeTitle" style={{ textAlign: "center" }}>Iată ce îți oferim</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}>Iată ce îți oferim</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată ce îți oferim</i></p>
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
@@ -149,7 +149,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerPricing text-center" id="simulari">
                 <p className="title2Pricing" style={{ textAlign: "center" }}>Simulări & Prețuri</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}>Iată ce îți oferim</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată ce îți oferim</i></p>
                 <div className="containerBoxPricing pricingContainerWrapperVisible">
                     <div class="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Română</p>
@@ -245,7 +245,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerFAQ" id="faq" style={{marginBottom: "50px"}}>
                 <p className="title2Pricing" style={{ textAlign: "center" }}>FAQ</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}>Răspunsul la cel mai adresate întrebări</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Răspunsul la cel mai adresate întrebări</i></p>
                 <Accordion defaultActiveKey="1" className="accordionContainer">
                     <Accordion.Item eventKey="1" className="accordionCard">
                         <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>

@@ -14,7 +14,7 @@ export default function About() {
             <div className="backgroundAbout">
                 <img src={AboutThreads} className="aboutThreads" alt="AboutThreads"/>
                 <p className="aboutTitle">Echipa Noastră</p>
-                <p className="aboutSubTitle">Află cine se ascunde în spatele celor mai bune simulări</p>
+                <p className="aboutSubTitle"><i>Află cine se ascunde în spatele celor mai bune simulări</i></p>
             </div>
             <div className="container text-center">
                 <Row className="justify-content-center align-items-center" style={{marginTop: "-300px", paddingLeft: "15%", paddingRight: "15%"}}>
@@ -42,8 +42,8 @@ export default function About() {
                     </Col>
                 </Row>
                 <div style={{marginBottom: "50px"}}>
-                    <p className="aboutTitle2">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                    <p className="aboutSubTitle2" style={{marginBottom: "50px"}}>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <p className="aboutTitle2">Despre noi</p>
+                    <p className="aboutSubTitle2" style={{marginBottom: "50px"}}><i>Cunoaște cum a început proiectulAjutor! Dau Bacu'</i></p>
                     <p className="aboutDescription">
                         <span class="indent">Lorem</span> Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                         Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum

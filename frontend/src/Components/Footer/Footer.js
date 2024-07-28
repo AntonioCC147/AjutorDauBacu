@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footerContainer text-center">
             <div className="row justify-content-center">
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <p className="footerTitle">Scurt cuvânt</p>
+                    <p className="footerTitle">Scurt Cuvânt</p>
                     <p className="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">

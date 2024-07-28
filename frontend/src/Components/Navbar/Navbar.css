@@ -6,7 +6,16 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
+.navbarContainer {
+    display: flex;
+
+    align-items: center;
+}
+
 .navbarCenter {
+    display: flex;
+    align-items: center;
+
     margin-top: 10px;
     margin-bottom: 10px !important;
 
@@ -19,15 +28,43 @@
 
     font-size: 1.2rem;
     font-weight: 100;
+
+    border-radius: 0px 0px 25px 25px;
 }
 
 .navbarText {
+    position: relative;
+    margin: 0px 15px 0px 15px;
+
+    font-weight: bolder !important;
+
+    color: #293651 !important;
+}
+
+.navbarTextColored {
     position: relative;
     margin: 0px 20px 0px 20px;
 
     font-weight: bolder !important;
 
-    color: #79808A !important;
+    color: #4E6BFF !important;
+}
+
+.navbarTextColored::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+
+    content: '';
+    
+    transform-origin: left;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+    transform: scaleX(1);
+
+    background-color: #4E6BFF;
 }
 
 .navbarText::after {
