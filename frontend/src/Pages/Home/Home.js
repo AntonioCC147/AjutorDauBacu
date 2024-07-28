@@ -35,10 +35,16 @@ export default function Home() {
         <div className="homeContainer roboto">
             <Row className="homeContainerHeroSection d-flex align-items-center justify-content-center">
                 <Col lg={6}>
-                    <p className="homeTitle">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                    <p className="homeSubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.</p>
+                    <p className="homeTitle">Ajutor! Dau Bacu'<br/>sare astăzi în ajutorul tău!</p>
+                    <p className="homeSubTitle" >Dacă ești elev în clasa a XII-a și dorești să-ți testezi cunoștințele, dacă vrei
+                        să vezi cât de bine ești pregătit sau să-ți provoci unul dintre prieteni în lupta pentru o notă cât mai
+                        mare, atunci ai ajuns unde trebuie! Echipa noastră te poate ajuta pe această cale, tu trebuind doar să
+                        participi la simulările organizate de către noi, concepute special pentru tine!
+                    </p>
                     <div className="homeButtonContainer">
-                        <Button variant="primary" className="homeButton">Începe acum</Button>
+                        <a href="/inscrie-te">
+                            <Button variant="primary" className="homeButton">Începe acum</Button>
+                        </a>
                     </div>
                 </Col>
                 <Col lg={6} className="d-flex align-items-center justify-content-center">
@@ -51,32 +57,33 @@ export default function Home() {
                 </Col>
                 <Col lg={6}>
                     <p className="homeTitle2">De ce să ne alegi pe noi?</p>
-                    <p className="homeTitle" style={{marginTop: "50px"}}>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                    <p className="homeSubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.</p>
+                    <p className="homeTitle" style={{marginTop: "50px"}}>Alege calea simplă de a-ți testa cunoștințele</p>
+                    <p className="homeSubTitle" style={{textAlign: "justify"}}>La început poate să-ți pară greu, însă de la a
+                        gândi până la a pune în practică este doar un singur pas. Simulările organizate de către noi sunt special
+                        concepute pentru a te ajuta în pregătirea examenului de bacalaureat și a-ți oferi o idee generală asupra
+                        nivelului la care te afli și la ce ar mai trebui să îmbunătățești.
+                    </p>
                     <div className="hrefContainer">
                         <a href="/#simulari" className="d-flex align-items-center">
                             <img src={BlueButton} className="blueButton" alt="Button"/>
-                            <p className="mb-0 ml-2 buttonTitle">ÎNCEARCĂ SIMULĂRILE NOASTRĂ</p>
+                            <p className="mb-0 ml-2 buttonTitle">ÎNCEARCĂ SIMULĂRILE NOASTRE</p>
                         </a>
                     </div>
                 </Col>
             </Row>
             <Row className="homeContainerBenefits d-flex align-items-center justify-content-center" >
-                <p className="homeTitle" style={{ textAlign: "center" }}>Iată ce îți oferim</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată ce îți oferim</i></p>
+                <p className="homeTitle" style={{ textAlign: "center" }}>Iată ce îți putem oferim</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>După cum am spus, de la a gândi până la a pune în practică este doar un singur pas</i></p>
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle">Pasul 1:<br />Susține<br />Simularea</p>
+                        <p className="stepsTitle"><b>Pasul 1:</b><br />Susține<br />Simularea</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Subiect1} />
                         <Card.Body>
-                            <Card.Title>Subiect</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
+                            <Card.Title style={{color: "#293651"}}><b>Subiect</b></Card.Title>
+                            <Card.Text style={{color: "#293651"}}>Subiectele noastre respectă programa oficială și sunt concepute să arate exact ca un subiect realizat de minister.</Card.Text>
                             <Button variant="primary" className="cardsButton" onClick={handleShow1}>Arată Subiectul</Button>
                         </Card.Body>
                     </Card>
@@ -98,16 +105,13 @@ export default function Home() {
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle">Pasul 2:<br />Primește<br />Baremul</p>
+                        <p className="stepsTitle"><b>Pasul 2:</b><br />Primește<br />Baremul</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Barem1} />
                         <Card.Body>
-                            <Card.Title>Barem</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
+                            <Card.Title style={{color: "#293651"}}><b>Barem</b></Card.Title>
+                            <Card.Text style={{color: "#293651"}}>Baremul conceput de către noi conține și rezolvările complete pentru a-ți fi mai ușor să te autoevaluezi.</Card.Text>
                             <Button variant="primary" className="cardsButton" onClick={handleShow2}>Arată Baremul</Button>
                         </Card.Body>
                     </Card>
@@ -130,16 +134,13 @@ export default function Home() {
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle">Pasul 3:<br />Primește<br />Feedback</p>
+                        <p className="stepsTitle"><b>Pasul 3:</b><br />Primește<br />Feedback</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Feedback} />
                         <Card.Body>
-                            <Card.Title>Feedback</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
+                            <Card.Title style={{color: "#293651"}}>Feedback</Card.Title>
+                            <Card.Text style={{color: "#293651"}}>Feedback-ul dat de către noi este unul personalizat și oferă pentru fiecare exercițiu greșit explicații și sfaturi de rezolvare.</Card.Text>
                             <a href="/">
                                 <Button variant="primary" className="cardsButton">Participă</Button>
                             </a>
@@ -149,7 +150,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerPricing text-center" id="simulari">
                 <p className="title2Pricing" style={{ textAlign: "center" }}>Simulări & Prețuri</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată ce îți oferim</i></p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Cele mai bune și ieftine simulări așteaptă să fie rezolvate de către tine</i></p>
                 <div className="containerBoxPricing pricingContainerWrapperVisible">
                     <div class="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Română</p>
@@ -244,8 +245,8 @@ export default function Home() {
                 </div>
             </Row>
             <Row className="homeContainerFAQ" id="faq" style={{marginBottom: "50px"}}>
-                <p className="title2Pricing" style={{ textAlign: "center" }}>FAQ</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Răspunsul la cel mai adresate întrebări</i></p>
+                <p className="title2Pricing" style={{ textAlign: "center" }}>Frequently Asked Question</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată câteva răspunsuri la cel mai adresate întrebări</i></p>
                 <Accordion defaultActiveKey="1" className="accordionContainer">
                     <Accordion.Item eventKey="1" className="accordionCard">
                         <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>

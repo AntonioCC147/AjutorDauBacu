@@ -64,7 +64,7 @@ export default function NavbarComponent() {
                             <Nav.Link href="/#faq" className={isCurrentPage('/#faq')}>FAQ</Nav.Link>
                             <Nav.Link href="/regulament" className={isCurrentPage('/regulament')}>Regulament</Nav.Link>
                             <Nav.Link href="/contact" className={isCurrentPage('/contact')}>Contact</Nav.Link>
-                            <Nav.Link href="/inscriete" style={{marginLeft: "15px"}}>
+                            <Nav.Link href="/inscrie-te" style={{marginLeft: "15px"}}>
                                 <Button variant="primary" className="cardsButton" style={{width: "150px"}}>Înscrie-te</Button>
                             </Nav.Link>
                         </Nav>
