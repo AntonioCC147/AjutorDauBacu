@@ -2,7 +2,7 @@ import './Edition.css';
 
 export default function Edition() {
     return (
-        <div className="editionContainer">
+        <div className="editionContainer roboto">
             <p className="editionTitle">Ediții</p>
             <p className="editionSubTitle"><i>Aici vei găsi istoricul tuturor edițiilor pe care le-am roganizat</i></p>
             <div>
