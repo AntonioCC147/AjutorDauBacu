@@ -1,4 +1,4 @@
-import ANPC from "../../assets/logo/ANPC.jpg";
+import ANPC from "../../assets/logo/ANPC.png";
 import Visa from "../../assets/logo/Visa.svg";
 
 import './Footer.css';
@@ -13,16 +13,16 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Pagini Utile</p>
-                    <a href="/"><p className="footerText">Acasă</p></a>
-                    <a href="despre"><p className="footerText">Despre noi</p></a>
-                    <p className="footerText">Simulări</p>
-                    <p className="footerText">Regulament</p>
-                    <p className="footerText">Preț</p>
-                    <p className="footerText">Contact</p>
+                    <a href="/despre"><p className="footerText">Echipă & Despre noi</p></a>
+                    <a href="/#simulari"><p className="footerText">Simulări & Prețuri</p></a>
+                    <a href="/#faq"><p className="footerText">FAQ</p></a>
+                    <a href="/contact"><p className="footerText">Contact</p></a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <p className="footerTitle">Altele</p>
-                    <a href="/"><p className="footerText">Acasă</p></a>
+                    <p className="footerTitle">Legale</p>
+                    <a href="/"><p className="footerText">Regulament</p></a>
+                    <a href="/"><p className="footerText">Termeni și Condiții</p></a>
+                    <a href="/"><p className="footerText">Politica de Confidențialitate</p></a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Administrativ</p>

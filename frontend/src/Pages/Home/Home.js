@@ -1,14 +1,21 @@
+import { useState } from 'react';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from 'react-bootstrap/Modal';
+import Carousel from 'react-bootstrap/Carousel';
 
 import HeroSection from '../../assets/images/HeroSection.png';
 import Examen2 from '../../assets/images/Examen2.svg';
 import BlueButton from '../../assets/icons/Button.png';
-import Subiect from '../../assets/images/Subiect.jpg';
-import Barem from '../../assets/images/Barem.jpg';
+import Subiect1 from '../../assets/images/Subiect1.jpg';
+import Subiect2 from '../../assets/images/Subiect2.jpg';
+import Barem1 from '../../assets/images/Barem1.jpg';
+import Barem2 from '../../assets/images/Barem2.jpg';
+import Barem3 from '../../assets/images/Barem3.jpg';
 import Feedback from '../../assets/images/Feedback.jpg';
 import RightArrow from "../../assets/icons/RightArrow.png";
 import Verify from '../../assets/icons/Verify.png';
@@ -16,6 +23,14 @@ import Verify from '../../assets/icons/Verify.png';
 import './Home.css';
 
 export default function Home() {
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+
+    const handleClose1 = () => setShow1(false);
+    const handleShow1 = () => setShow1(true);
+    const handleClose2 = () => setShow2(false);
+    const handleShow2 = () => setShow2(true);
+
     return (
         <div className="homeContainer roboto">
             <Row className="homeContainerHeroSection d-flex align-items-center justify-content-center">
@@ -55,16 +70,30 @@ export default function Home() {
                         <p className="stepsTitle">Pasul 1:<br />Susține<br />Simularea</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={Subiect} />
+                        <Card.Img variant="top" src={Subiect1} />
                         <Card.Body>
                             <Card.Title>Subiect</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary" className="cardsButton">Arată Subiectul</Button>
+                            <Button variant="primary" className="cardsButton" onClick={handleShow1}>Arată Subiectul</Button>
                         </Card.Body>
                     </Card>
+                    <Modal show={show1} onHide={handleClose1}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Model Subiect Informatică</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Carousel className="text-center">
+                                <Carousel.Item><img src={Subiect1} className="carouselImages" alt="CarouselImage"/></Carousel.Item>
+                                <Carousel.Item><img src={Subiect2} className="carouselImages" alt="CarouselImage"/></Carousel.Item>
+                            </Carousel>
+                        </Modal.Body>
+                        <Modal.Footer className="d-flex justify-content-center">
+                            <Button variant="primary" className="cardsButton" onClick={handleClose1}>Închide</Button>
+                        </Modal.Footer>
+                    </Modal>
                 </Col>
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
@@ -72,16 +101,31 @@ export default function Home() {
                         <p className="stepsTitle">Pasul 2:<br />Primește<br />Baremul</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={Barem} />
+                        <Card.Img variant="top" src={Barem1} />
                         <Card.Body>
                             <Card.Title>Barem</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary" className="cardsButton">Arată Baremul</Button>
+                            <Button variant="primary" className="cardsButton" onClick={handleShow2}>Arată Baremul</Button>
                         </Card.Body>
                     </Card>
+                    <Modal show={show2} onHide={handleClose2}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Model Barem Informatică</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Carousel className="text-center">
+                                <Carousel.Item><img src={Barem1} className="carouselImages" alt="CarouselImage"/></Carousel.Item>
+                                <Carousel.Item><img src={Barem2} className="carouselImages" alt="CarouselImage"/></Carousel.Item>
+                                <Carousel.Item><img src={Barem3} className="carouselImages" alt="CarouselImage"/></Carousel.Item>
+                            </Carousel>
+                        </Modal.Body>
+                        <Modal.Footer className="d-flex justify-content-center">
+                            <Button variant="primary" className="cardsButton" onClick={handleClose2}>Închide</Button>
+                        </Modal.Footer>
+                    </Modal>
                 </Col>
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
@@ -96,7 +140,9 @@ export default function Home() {
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary" className="cardsButton">Arată Feedback-ul</Button>
+                            <a href="/">
+                                <Button variant="primary" className="cardsButton">Participă</Button>
+                            </a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -166,7 +212,7 @@ export default function Home() {
                     <div className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Matematică</p>
                         <p className="cardPrice">Coming Soon...</p>
-                        <p className="cardDescription">Subiectul conține toată materia pentru clasele IX-XII</p>
+                        <p className="cardDescription">Subiectul conține toată materia din liceu</p>
                         <hr/>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
