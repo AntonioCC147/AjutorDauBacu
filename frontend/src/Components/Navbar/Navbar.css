@@ -47,6 +47,17 @@
     color: #4E6BFF;
 }
 
+.logoText1 {
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+
+    color: white;
+}
+
+
+.logoText2 {
+    color: #4E6BFF;
+}
+
 .navbarText {
     position: relative;
     margin: 0px 15px 0px 15px;

@@ -3,6 +3,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import Instagram from '../../assets/icons/Instagram.png';
+import Facebook from '../../assets/icons/Facebook.png';
+import Linkedin from '../../assets/icons/Linkedin.png';
+
 import './Contact.css';
 
 export default function Contact() {
@@ -16,9 +20,20 @@ export default function Contact() {
                         iar noi îți vom răspunde în cel mai scurt timp posibil.
                     </p>
                     <p className="titleContact">Adresă de Email</p>
-                    <p className="subTitleContactLeft">email@gmail.com</p>
+                    <p className="subTitleContactLeft">ajutordaubacu@gmail.com</p>
                     <hr/>
                     <p className="titleContact">Social Media</p>
+                    <div>
+                        <a href="/">
+                            <img src={Instagram} className="socialLogo" alt="Instagram" style={{marginLeft: "0px"}}/>
+                        </a>
+                        <a href="/">
+                            <img src={Facebook} className="socialLogo" alt="Facebook"/>
+                        </a>
+                        <a href="/">
+                            <img src={Linkedin} className="socialLogo" alt="Linkedin"/>
+                        </a>
+                    </div>
                 </Col>
                 <Col lg={1}/>
                 <Col lg={7} className="contactCards">

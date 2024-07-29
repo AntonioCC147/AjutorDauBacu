@@ -57,7 +57,10 @@ export default function NavbarComponent() {
                 <Container>
                     <a href="/" style={{marginTop: "5px"}}>
                         <img src={Logo} className="logoImage" alt="Logo"/>
-                        <span className="logoTitle">Ajutor! Dau Bacu'</span>
+                        <span className="logoTitle">
+                            <span className="logoText1">Ajutor!</span>{' '}
+                            <span className="logoText2">Dau Bacu'</span>
+                        </span>
                     </a>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">

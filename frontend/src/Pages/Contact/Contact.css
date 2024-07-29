@@ -64,6 +64,17 @@
     color: #FFFFFF;
 }
 
+.socialLogo {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 35px;
+}
+
+.socialLogo:hover {
+    transform: scale(1.1);
+}
+
 @media only screen and (max-width: 990px) {
     .mailContact {
         margin-top: 25px;
