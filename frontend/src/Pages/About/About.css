@@ -71,9 +71,10 @@
 }
 
 .aboutDescription {
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
-    font-size: 1rem;
+    font-size: 1.1rem;
 
     text-align: justify;
 }

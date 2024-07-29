@@ -43,7 +43,7 @@ export default function About() {
                 </Row>
                 <div style={{marginBottom: "50px"}}>
                     <p className="aboutTitle2">Despre noi</p>
-                    <p className="aboutSubTitle2" style={{marginBottom: "50px"}}><i>Cunoaște cum a început proiectulAjutor! Dau Bacu'</i></p>
+                    <p className="aboutSubTitle2" style={{marginBottom: "50px"}}><i>Cunoaște cum a început proiectul Ajutor! Dau Bacu'</i></p>
                     <p className="aboutDescription">
                         <span class="indent">Lorem</span> Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                         Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
