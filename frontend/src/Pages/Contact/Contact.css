@@ -35,6 +35,12 @@
     background-color: #FFFFFF;
 }
 
+.contactCardLeft {
+    height: 300px;
+
+    background-color: #4E6BFF;
+}
+
 .titleContact {
     font-size: 1.5rem;
     font-weight: 500;
@@ -48,4 +54,18 @@
     text-align: justify;
 
     color: #79808A;
+}
+
+.subTitleContactLeft {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 990px) {
+    .mailContact {
+        margin-top: 25px;
+    }
 }

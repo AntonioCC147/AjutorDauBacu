@@ -1,3 +1,4 @@
+import Logo from '../../assets/logo/Logo.png';
 import ANPC from "../../assets/logo/ANPC.png";
 import Visa from "../../assets/logo/Visa.svg";
 
@@ -8,8 +9,9 @@ export default function Footer() {
         <div className="footerContainer text-center">
             <div className="row justify-content-center">
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <p className="footerTitle">Scurt Cuvânt</p>
-                    <p className="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/">
+                        <img src={Logo} className="logoFooter" alt="Logo"/>
+                    </a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Pagini Utile</p>
@@ -21,7 +23,7 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <p className="footerTitle">Legale</p>
-                    <a href="/inscriete"><p className="footerText">Înscrie-te</p></a>
+                    <a href="/inscrie-te"><p className="footerText">Înscrie-te</p></a>
                     <a href="/regulament"><p className="footerText">Regulament</p></a>
                     <a href="/termenisiconditii"><p className="footerText">Termeni și Condiții</p></a>
                     <a href="/politicaconfidentialitate"><p className="footerText">Politica de Confidențialitate</p></a>

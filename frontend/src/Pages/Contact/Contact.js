@@ -9,13 +9,14 @@ export default function Contact() {
     return (
         <div className="contactContainer roboto">
             <p className="contactTitle">Contact</p>
-            <Row className="w-100 d-flex align-items-center justify-content-center">
-                <Col lg={4} className="contactCards">
+            <Row style={{paddingBottom: "50px"}}>
+                <Col lg={4} className="contactCards contactCardLeft">
                     <p className="titleContact">Informații</p>
-                    <p className="subTitleContact">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem</p>
+                    <p className="subTitleContactLeft">Dacă întâmpini o problemă sau ai o întrebare pentru noi, nu ezita să ne scrii,
+                        iar noi îți vom răspunde în cel mai scurt timp posibil.
+                    </p>
                     <p className="titleContact">Adresă de Email</p>
-                    <p className="subTitleContact">email@gmail.com</p>
+                    <p className="subTitleContactLeft">email@gmail.com</p>
                     <hr/>
                     <p className="titleContact">Social Media</p>
                 </Col>
@@ -29,7 +30,7 @@ export default function Contact() {
                             </Col>
                             <Col lg={2}/>
                             <Col lg={5}>
-                                <p className="subTitleContact">Adresă de Email</p>
+                                <p className="subTitleContact mailContact">Adresă de Email</p>
                                 <Form.Control type="email" placeholder="popescuion@gmail.com"/>
                             </Col>
                         </Row>

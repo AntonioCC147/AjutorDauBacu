@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Logo from '../../assets/logo/Logo.png';
+
 import './Navbar.css';
 
 export default function NavbarComponent() {
@@ -53,7 +55,10 @@ export default function NavbarComponent() {
         <div className={`roboto navbarContainer ${scrolling ? 'scrolled' : ''}`}>
             <Navbar fixed="top" collapseOnSelect expand="xxl" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
                 <Container>
-                    {/* logo */}Ajutor! Dau Bacu'
+                    <a href="/" style={{marginTop: "5px"}}>
+                        <img src={Logo} className="logoImage" alt="Logo"/>
+                        <span className="logoTitle">Ajutor! Dau Bacu'</span>
+                    </a>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className={`me-auto navbarCenter ${scrolling ? 'scrolled' : ''}`}>
