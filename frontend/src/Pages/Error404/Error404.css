@@ -1,0 +1,21 @@
+.error404Container {
+    margin-top: 75px;
+
+    min-height: calc(100vh - 75px);
+}
+
+.error404Image {
+    width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    .error404Image {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .error404Image {
+        width: 300px;
+    }
+}

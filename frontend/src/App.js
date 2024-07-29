@@ -12,6 +12,7 @@ import Rules from "./Pages/Administrativ/Rules/Rules";
 import Terms from "./Pages/Administrativ/Terms/Terms";
 import Politics from "./Pages/Administrativ/Politics/Politics";
 import Footer from "./Components/Footer/Footer";
+import Error404 from "./Pages/Error404/Error404";
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
                     <Route path="/termenisiconditii" element={<Terms/>}/>
                     <Route path="/politicaconfidentialitate" element={<Politics/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="*" element={<Error404/>}/>
                 </Routes>
             </Router>
             <Footer/>
