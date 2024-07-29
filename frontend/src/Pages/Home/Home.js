@@ -57,7 +57,7 @@ export default function Home() {
                 </Col>
                 <Col lg={6}>
                     <p className="homeTitle2">De ce să ne alegi pe noi?</p>
-                    <p className="homeTitle" style={{marginTop: "50px"}}>Alege calea simplă de a-ți testa cunoștințele</p>
+                    <p className="homeTitle" style={{marginTop: "50px"}}>Alege calea simplă de a-ți testa cunoștințele!</p>
                     <p className="homeSubTitle" style={{textAlign: "justify"}}>La început poate să-ți pară greu, însă de la a
                         gândi până la a pune în practică este doar un singur pas. Simulările organizate de către noi sunt special
                         concepute pentru a te ajuta în pregătirea examenului de bacalaureat și a-ți oferi o idee generală asupra
@@ -249,59 +249,52 @@ export default function Home() {
                 <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată câteva răspunsuri la cel mai adresate întrebări</i></p>
                 <Accordion defaultActiveKey="1" className="accordionContainer">
                     <Accordion.Item eventKey="1" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Cine concepe și corectează simulările?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Simulările sunt concepute și corectate de către studenți specializați în domeniu, respectiv studenți
+                            cu experiență în domenii educaționale, precum voluntariate în cadrul laboratoarelor de la facultate,
+                            meditații sau alte lucruri specifice.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Cat durează o simulare?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            O simulare durează exact cât un examen oficial de bacalaureat, respectiv 3 ore.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="3" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Unde se va desfășura simularea?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Simularea se va desfășura în format online. După înscriere veți primi un link de conectare și mai
+                            multe informații despre modul exact de desfășurare a acesteia.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="4" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Cât durează să primesc răspunsul la simulare?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Răspunsurile la simulări vor fi primite după aproximativ 5-7 zile de la susținerea acestora pentru ca
+                            echipa ce le corectează să aibă suficient timp să se ocupe de acestea.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="5" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Pot contesta nota primită?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Notele primite nu se pot contesta, însă dacă cineva consideră că totuși nota primită este greșită, ne
+                            poate contacta la adresa de email atașată sau completând formularul din secțiunea de Contact.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="6" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Cred că am găsit o greșeală într-un subiect, ce pot face?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Dacă consideri că ai găsit o greșeală într-un subiect, atunci ne poți scrie la adresa de email atașată
+                            sau completând formularul din secțiunea de Contact.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="7" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Lorem Ipsum Lorem Ipsum Lorem Ipsum</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Se vor desfășura pe viitor și simulări la alte materii?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. 
+                            Cu siguranță da! Pregătim simulări la mai multe materii pe viitor. Fiți cu ochii pe rețelele noastre
+                            de socializare pentru a fi primii care află când vom organiza o nouă simulare.
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>

@@ -247,12 +247,20 @@ a {
 }
 
 .accordion-button {
+    padding-left: 50px;
+    padding-right: 50px;
+
     font-size: 1.1rem;
 
     border-radius: 20px;
 
     color: #FFFFFF;
     background-color: #4E6BFF !important;
+}
+
+.accordion-body {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .accordionContainer {
