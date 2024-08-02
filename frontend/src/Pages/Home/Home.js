@@ -141,7 +141,7 @@ export default function Home() {
                         <Card.Body>
                             <Card.Title style={{color: "#293651"}}>Feedback</Card.Title>
                             <Card.Text style={{color: "#293651"}}>Feedback-ul dat de către noi este unul personalizat și oferă pentru fiecare exercițiu greșit explicații și sfaturi de rezolvare.</Card.Text>
-                            <a href="/">
+                            <a href="/inscrie-te">
                                 <Button variant="primary" className="cardsButton">Participă</Button>
                             </a>
                         </Card.Body>
