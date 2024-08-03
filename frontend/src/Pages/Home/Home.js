@@ -9,7 +9,7 @@ import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 
 import HeroSection from '../../assets/images/HeroSection.png';
-import Examen2 from '../../assets/images/Examen2.svg';
+import WhyUs from '../../assets/images/WhyUs.jpg';
 import BlueButton from '../../assets/icons/Button.png';
 import Subiect1 from '../../assets/images/Subiect1.jpg';
 import Subiect2 from '../../assets/images/Subiect2.jpg';
@@ -53,7 +53,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerWhyUs d-flex align-items-center justify-content-center">
                 <Col lg={6} className="text-center">
-                    <img src={Examen2} className="whyUsImage" alt="WhyUsSection"/>
+                    <img src={WhyUs} className="whyUsImage" alt="WhyUsSection"/>
                 </Col>
                 <Col lg={6}>
                     <p className="homeTitle2">De ce să ne alegi pe noi?</p>
