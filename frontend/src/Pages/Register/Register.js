@@ -104,24 +104,31 @@ export default function Register() {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col lg={5}>
-                                        <p className="subTitleContact2">Opțiuni simulare:</p>
-                                        <Field name="color" component="select">
-                                            <option value="Option1">Informatică (Matematică-Informatică) - 35 RON</option>
-                                            <option disabled value="Option2">Matematică (Matematică-Informatică) - Va urma</option>
-                                            <option disabled value="Option3">Matematică (Științele-Naturii) - Va urma</option>
-                                        </Field>
+                                    <Col lg={8}>
+                                        <Row>
+                                            <Col lg={5}>
+                                                <p className="subTitleContact2">Opțiuni simulare:</p>
+                                                <Field name="color" component="select">
+                                                    <option value="Option1">Informatică (Matematică-Informatică) - 35 RON</option>
+                                                    <option disabled value="Option2">Matematică (Matematică-Informatică) - Va urma</option>
+                                                    <option disabled value="Option3">Matematică (Științele-Naturii) - Va urma</option>
+                                                </Field>
+                                            </Col>
+                                        </Row>
+                                            <Row style={{marginTop: "25px"}}>
+                                            <label>
+                                                <Field type="checkbox" name="checked" value="Check1" style={{marginRight: "5px"}} required/>
+                                                Sunt de acord cu prelucrarea datelor conform regulamentului GDPR.
+                                            </label>
+                                            <label>
+                                                <Field type="checkbox" name="checked" value="Check2" style={{marginRight: "5px"}} required/>
+                                                Am citit și sunt de acord cu <a href="/termenisiconditii" target="blank">Termenii și Condițiile</a> și <a href="/politicaconfidentialitate" target="blank">Politica de Confidențialitate</a>.
+                                            </label>
+                                        </Row>
                                     </Col>
-                                </Row>
-                                <Row style={{marginTop: "25px"}}>
-                                    <label>
-                                        <Field type="checkbox" name="checked" value="Check1" style={{marginRight: "5px"}} required/>
-                                        Sunt de acord cu prelucrarea datelor conform regulamentului GDPR.
-                                    </label>
-                                    <label>
-                                        <Field type="checkbox" name="checked" value="Check2" style={{marginRight: "5px"}} required/>
-                                        Am citit și sunt de acord cu <a href="/termenisiconditii" target="blank">Termenii și Condițiile</a> și <a href="/politicaconfidentialitate" target="blank">Politica de Confidențialitate</a>.
-                                    </label>
+                                    <Col lg={4} className="d-flex justify-content-center">
+                                        <p className="totalPriceContact2 align-self-end">Total: 35 RON</p>
+                                    </Col>
                                 </Row>
                                 <div className="text-center" style={{marginTop: "25px"}}>
                                     <Button type="submit" variant="primary" className="cardsButton" disabled={isSubmitting}>

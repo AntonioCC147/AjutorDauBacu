@@ -82,6 +82,11 @@
     color: #293651;
 }
 
+.totalPriceContact2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
 .formContainer {
     padding: 25px;
 
@@ -119,5 +124,11 @@ a:hover {
     .registerContainer2 {
         padding: 25px;
         margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .totalPriceContact2 {
+        margin-top: 25px;
     }
 }
