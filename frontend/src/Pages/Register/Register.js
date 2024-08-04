@@ -106,7 +106,7 @@ export default function Register() {
                                 <Row>
                                     <Col lg={8}>
                                         <Row>
-                                            <Col lg={5}>
+                                            <Col lg={7}>
                                                 <p className="subTitleContact2">Opțiuni simulare:</p>
                                                 <Field name="color" component="select">
                                                     <option value="Option1">Informatică (Matematică-Informatică) - 35 RON</option>
