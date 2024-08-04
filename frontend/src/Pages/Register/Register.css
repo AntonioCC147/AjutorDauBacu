@@ -1,0 +1,123 @@
+.registerContainer {
+    margin-top: 75px;
+    padding-bottom: 50px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    min-height: calc(100vh - 75px);
+
+    background-color: #F4F7FA;
+}
+
+.registerTitle {
+    padding-top: 50px;
+    margin-bottom: 0px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    color: #293651;
+}
+
+.registerSubTitle {
+    margin-top: 0px;
+
+    font-size: 1.2rem;
+    text-align: center;
+    
+    color: #79808A;
+}
+
+.registerSubSubTitle {
+    margin-bottom: 0px;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+
+    color: #293651;
+}
+
+.registerContainer2 {
+    margin: 50px;
+    margin-bottom: 25px;
+    padding: 50px;
+
+    min-height: 500px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    border-color: #4E6BFF;
+}
+
+.registerContainerTitle {
+    font-size: 1.5rem;
+
+    color: #293651;
+}
+
+.registerContainerSubTitle {
+    font-size: 1.2rem;
+    text-align: justify;
+
+    color: #79808A;
+}
+
+.subTitleContact {
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    color: #293651;
+}
+
+.subTitleContact2 {
+    margin-top: 15px;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    color: #293651;
+}
+
+.formContainer {
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background-color: #FFFFFF;
+}
+
+select {
+    width: 100%;
+    
+    padding-left: 10px;
+
+    height: 35px;
+
+    border-radius: 5px;
+    border-color: #DEE2E6;
+}
+
+a {
+    color: #4E6BFF !important;
+}
+
+a:hover {
+    color: #293651 !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .subTitleContact, .subTitleContact2 {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .registerContainer2 {
+        padding: 25px;
+        margin: 0px;
+    }
+}

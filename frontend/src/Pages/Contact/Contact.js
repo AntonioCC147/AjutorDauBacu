@@ -95,19 +95,19 @@ export default function Contact() {
                                 <Row>
                                     <Col lg={5}>
                                         <p className="subTitleContact">Nume</p>
-                                        <Field type="text" name="user_name" className="form-control" placeholder="Popescu Ion" />
-                                        <ErrorMessage name="user_name" component="div" />
+                                        <Field type="text" name="user_name" className="form-control" placeholder="Popescu Ion"/>
+                                        <ErrorMessage name="user_name" component="div"/>
                                     </Col>
                                     <Col lg={2}/>
                                     <Col lg={5}>
                                         <p className="subTitleContact mailContact">Adresă de Email</p>
-                                        <Field type="email" name="user_email" className="form-control" placeholder="popescuion@gmail.com" />
-                                        <ErrorMessage name="user_email" component="div" />
+                                        <Field type="email" name="user_email" className="form-control" placeholder="popescuion@gmail.com"/>
+                                        <ErrorMessage name="user_email" component="div"/>
                                     </Col>
                                 </Row>
                                 <Row style={{marginTop: "25px"}}>
                                     <p className="subTitleContact">Mesaj</p>
-                                    <Field as="textarea" name="message" className="form-control" rows={6} placeholder="Mesaj..." />
+                                    <Field as="textarea" name="message" className="form-control" rows={6} placeholder="Mesaj..."/>
                                     <ErrorMessage name="message" component="div" />
                                 </Row>
                                 <div className="text-center" style={{marginTop: "25px"}}>

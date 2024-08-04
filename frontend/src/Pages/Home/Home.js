@@ -178,12 +178,12 @@ export default function Home() {
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button disabled className="buttonPricing" href="/">Înscrie-te</Button>
+                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
                         </div>
                     </div>
                     <div class="cardBoxPricing" style={{marginTop: "25px", marginBottom: "50px"}}>
                         <p className="cardTitle">Simulare Informatică</p>
-                        <p className="cardPrice">35 LEI</p>
+                        <p className="cardPrice">35 RON</p>
                         <p className="cardDescription">Subiectul conține toată materia pentru clasele IX-XI</p>
                         <hr/>
                         <div style={{paddingBottom: "15px"}}>
@@ -207,7 +207,7 @@ export default function Home() {
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button className="buttonPricing" href="/">Înscrie-te</Button>
+                            <Button className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
                         </div>
                     </div>
                     <div className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
@@ -236,7 +236,7 @@ export default function Home() {
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button disabled className="buttonPricing" href="/">Înscrie-te</Button>
+                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
                         </div>
                     </div>
                     <div className="text-center">
