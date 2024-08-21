@@ -24,7 +24,8 @@ export default function About() {
                             <Card.Body>
                                 <Card.Title className="staffTitle">Crantea Antonio-Cristian</Card.Title>
                                 <Card.Text className="staffSubTitle">
-                                    Student în anul III la Facultatea de Automatică și Calculatoare
+                                    Student în anul III la Facultatea de Automatică și Calculatoare<br/>
+                                    Asistent universitar (voluntar) în cadrul laboratoarelor din facultate
                                 </Card.Text>
                             </Card.Body>
                         </Card>

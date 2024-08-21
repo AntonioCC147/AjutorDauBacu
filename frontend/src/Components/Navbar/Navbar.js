@@ -47,10 +47,6 @@ export default function NavbarComponent() {
         return currentPath === path ? "navbarTextColored" : "navbarText";
     }
 
-    const isCurrentPage2 = (path) => {
-        return currentPath === path ? true : false;
-    }
-
     return (
         <div className={`roboto navbarContainer ${scrolling ? 'scrolled' : ''}`}>
             <Navbar fixed="top" collapseOnSelect expand="xxl" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
@@ -65,7 +61,7 @@ export default function NavbarComponent() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className={`me-auto navbarCenter ${scrolling ? 'scrolled' : ''}`}>
-                            <Nav.Link href="/" className={`${scrolling ? 'scrolled' : ''} ${isCurrentPage2('/') ? 'navbarTextColored' : 'navbarText'}`}>Acasă</Nav.Link>
+                            <Nav.Link href="/" className={isCurrentPage('/')}>Acasă</Nav.Link>
                             <Nav.Link href="/despre" className={isCurrentPage('/despre')}>Despre noi</Nav.Link>
                             <Nav.Link href="/editii" className={isCurrentPage('/editii')}>Ediții</Nav.Link>
                             <Nav.Link href="/#simulari" className={isCurrentPage('/#simulari')}>Simulări & Prețuri</Nav.Link>
