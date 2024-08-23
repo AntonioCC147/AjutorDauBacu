@@ -24,8 +24,9 @@ export default function About() {
                             <Card.Body>
                                 <Card.Title className="staffTitle">Crantea Antonio-Cristian</Card.Title>
                                 <Card.Text className="staffSubTitle">
-                                    Student în anul III la Facultatea de Automatică și Calculatoare<br/>
-                                    Asistent universitar (voluntar) în cadrul laboratoarelor din facultate
+                                    <p className="staffSubSubTitle">Student în anul III la Facultatea de Automatică și Calculatoare</p>
+                                    <p className="staffSubSubTitle">Asistent universitar (voluntar) în cadrul laboratoarelor din facultate</p>
+                                    <p className="staffSubSubTitle">A obținut nota 10 la Informatică în cadrul examenului de Bacalaureat</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -36,7 +37,9 @@ export default function About() {
                             <Card.Body>
                                 <Card.Title className="staffTitle">Loțan Roberto-Gabriel</Card.Title>
                                 <Card.Text className="staffSubTitle">
-                                    Student în anul II la Facultatea de Automatică și Calculatoare
+                                    <p className="staffSubSubTitle">Student în anul II la Facultatea de Automatică și Calculatoare</p>
+                                    <p className="staffSubSubTitle">A obținut nota 10 la Matematică în cadrul examenului de Bacalaureat</p>
+                                    <p className="staffSubSubTitle">A obținut nota 10 la Informatică în cadrul examenului de Bacalaureat</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

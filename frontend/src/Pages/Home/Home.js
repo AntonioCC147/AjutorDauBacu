@@ -240,7 +240,9 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="text-center">
-                        <Button variant="primary" className="cardsButton" style={{width: "225px", height: "50px", marginBottom: "50px"}}>Citește Regulamentul</Button>
+                        <a href="/regulament">
+                            <Button variant="primary" className="cardsButton" style={{width: "225px", height: "50px", marginBottom: "50px"}}>Citește Regulamentul</Button>
+                        </a>
                     </div>
                 </div>
             </Row>
