@@ -110,8 +110,8 @@ export default function Register() {
                                                 <p className="subTitleContact2">Opțiuni simulare:</p>
                                                 <Field name="color" component="select">
                                                     <option value="Option1">Informatică (Matematică-Informatică) - 35 RON</option>
+                                                    <option disabled value="Option3">Limba și Literatura Română (Uman / Real) - Va urma</option>
                                                     <option disabled value="Option2">Matematică (Matematică-Informatică) - Va urma</option>
-                                                    <option disabled value="Option3">Matematică (Științele-Naturii) - Va urma</option>
                                                 </Field>
                                             </Col>
                                         </Row>
