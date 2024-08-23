@@ -2,16 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import Logo from '../../assets/logo/Logo.png';
-
 import './Navbar.css';
+import { useLocation } from 'react-router-dom';
 
 export default function NavbarComponent() {
     const [scrolling, setScrolling] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -41,11 +40,21 @@ export default function NavbarComponent() {
         };
     }, []);
 
-    const currentPath = window.location.pathname;
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+            const element = document.getElementById(hash.replace("#", ""));
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
+
+    const currentPath = location.pathname + location.hash;
 
     const isCurrentPage = (path) => {
         return currentPath === path ? "navbarTextColored" : "navbarText";
-    }
+    };
 
     return (
         <div className={`roboto navbarContainer ${scrolling ? 'scrolled' : ''}`}>

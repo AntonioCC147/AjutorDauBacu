@@ -18,8 +18,8 @@ import Error404 from "./Pages/Error404/Error404";
 export default function App() {
     return (
         <>
-            <NavbarComponent/>
             <Router>
+                <NavbarComponent/>
                 <Routes>
                     <Route exact path="/" element={<Home/>}/>
                     <Route path="/despre" element={<About/>}/>
