@@ -173,7 +173,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">corectat manual</span>
+                            <span className="cardTextBenefits">corectare manuală</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
@@ -202,7 +202,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">corectat manual</span>
+                            <span className="cardTextBenefits">corectare manuală</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
@@ -231,7 +231,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">corectat manual</span>
+                            <span className="cardTextBenefits">corectare manuală</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
