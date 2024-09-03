@@ -14,7 +14,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <p className="footerTitle">Pagini Utile</p>
+                    <p className="footerTitle">Link-uri Utile</p>
                     <a href="/despre"><p className="footerText">Despre noi</p></a>
                     <a href="/editii"><p className="footerText">Ediții</p></a>
                     <a href="/#simulari"><p className="footerText">Simulări & Prețuri</p></a>
@@ -22,7 +22,7 @@ export default function Footer() {
                     <a href="/contact"><p className="footerText">Contact</p></a>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <p className="footerTitle">Legale</p>
+                    <p className="footerTitle">Juridice</p>
                     <a href="/inscrie-te"><p className="footerText">Înscrie-te</p></a>
                     <a href="/regulament"><p className="footerText">Regulament</p></a>
                     <a href="/termenisiconditii"><p className="footerText">Termeni și Condiții</p></a>

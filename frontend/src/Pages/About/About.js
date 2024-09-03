@@ -25,7 +25,7 @@ export default function About() {
                                 <Card.Title className="staffTitle">Crantea Antonio-Cristian</Card.Title>
                                 <Card.Text className="staffSubTitle">
                                     <p className="staffSubSubTitle">Student în anul III la Facultatea de Automatică și Calculatoare</p>
-                                    <p className="staffSubSubTitle">Asistent universitar (voluntar) în cadrul laboratoarelor din facultate</p>
+                                    <p className="staffSubSubTitle">Asistent universitar (voluntar) în cadrul laboratoarelor de la facultate</p>
                                     <p className="staffSubSubTitle">A obținut nota 10 la Informatică în cadrul examenului de Bacalaureat</p>
                                 </Card.Text>
                             </Card.Body>
@@ -49,19 +49,20 @@ export default function About() {
                     <p className="aboutTitle2">Despre noi</p>
                     <p className="aboutSubTitle2" style={{marginBottom: "50px"}}><i>Cunoaște cum a început proiectul Ajutor! Dau Bacu'</i></p>
                     <p className="aboutDescription">
-                        <span class="indent">Lorem</span> Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        <span class="indent">Ajutor!</span> Dau Bacu' este inițiativa unei echipe de studenți entuziaști, care își
+                            propun să sprijine elevii în pregătirea pentru Examenul de Bacalaureat.
                     </p>
                     <p className="aboutDescription">
-                        <span class="indent">Lorem</span> Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        <span class="indent">Prin</span> intermediul proiectului nostru, oferim diverse resurse concepute pentru a
+                            simplifica procesul de învățare, precum contul nostru de Instagram @AjutorDauBacu, unde publicăm gratuit
+                            diverse exerciții rezolvate și oferim sfaturi care simplifică procesul de învățare, sau simulările online
+                            de Bacalaureat, unde participanții își pot testa cunoștințele în condiții de examen și pot primi feedback
+                            personalizat.
                     </p>
                     <p className="aboutDescription">
-                        <span class="indent">Lorem</span> Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        <span class="indent">Cu</span> experiența recentă în susținerea examenului, echipa noastră aduce o
+                            perspectivă proaspătă și practică, ajutându-te să îți atingi potențialul maxim și să promovezi cu
+                            succes examenul de Bacalaureat.
                     </p>
                 </div>
             </div>

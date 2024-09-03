@@ -28,8 +28,8 @@ const validationSchema = Yup.object().shape({
 export default function Register() {
     return (
         <div className="registerContainer">
-            <p className="registerTitle">Înscrie-te</p>
-            <p className="registerSubTitle"><i>Nu rata ocazia de a susține cea mai tare simulare de până acum</i></p>
+            <p className="registerTitle">Înscrie-te!</p>
+            <p className="registerSubTitle"><i>Pregătit să îți testezi cunoștințele? Înscrie-te acum și asigură-ți locul!</i></p>
             {/*
             <div className="text-center">
                 <p className="registerSubSubTitle">Înscrierile s-au terminat!</p>
@@ -39,13 +39,28 @@ export default function Register() {
             */}
             <div className="registerContainer2">
                 <p className="registerContainerTitle">Descriere:</p>
-                <p className="registerContainerSubTitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="registerContainerSubTitle">
+                    Înscrierea și achitarea taxei de 35 lei vă asigură participarea la simularea examenului de Bacalaureat, la
+                    materia xxxxxxxxxx, ce va avea loc pe xx.xx.2024, ora 10:00, online, pe platforma Google Meet.
+                </p>
+                <br/>
                 <p className="registerContainerTitle">Detalii simulare:</p>
-                <p className="registerContainerSubTitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p className="registerContainerTitle">Ceva:</p>
-                <p className="registerContainerSubTitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p className="registerContainerTitle">Altceva:</p>
-                <p className="registerContainerSubTitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="registerContainerSubTitle">
+                    Participanții vor primi link-ul de acces și se vor conecta la întâlnirea online în jurul orei 9:30.  
+                </p>
+                <p className="registerContainerSubTitle">
+                    Simularea va începe la ora 10:00 și va dura 3 ore.
+                </p>
+                <p className="registerContainerSubTitle">
+                    După încheierea timpului alocat rezolvării subiectelor, participanții vor avea 30 de minute la dispoziție
+                    pentru a scana toate foile ce conțin rezolvările subiectelor și a le încărca în formularul pentru răspunsuri.
+                </p>
+                <p className="registerContainerSubTitle">
+                    În urma participării la simulare, candidații primesc rezultatul obținut, poziția în clasament și feedback
+                    personalizat pentru fiecare exercițiu greșit, sub forma unui email la adresa folosită la înscriere, în termen
+                    de maxim 10 zile.
+                </p>
+                <br/>
                 <p className="registerContainerTitle">Formular de înscriere:</p>
                 <Row className="formContainer">
                     <Formik

@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../../assets/logo/Logo.png';
+import Logo from '../../assets/logo/Logo.jpg';
 import './Navbar.css';
 import { useLocation } from 'react-router-dom';
 
@@ -62,10 +62,7 @@ export default function NavbarComponent() {
                 <Container>
                     <a href="/" style={{marginTop: "5px"}}>
                         <img src={Logo} className="logoImage" alt="Logo"/>
-                        <span className="logoTitle">
-                            <span className="logoText1">Ajutor!</span>{' '}
-                            <span className="logoText2">Dau Bacu'</span>
-                        </span>
+                        
                     </a>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -78,7 +75,7 @@ export default function NavbarComponent() {
                             <Nav.Link href="/regulament" className={isCurrentPage('/regulament')}>Regulament</Nav.Link>
                             <Nav.Link href="/contact" className={isCurrentPage('/contact')}>Contact</Nav.Link>
                             <Nav.Link href="/inscrie-te" style={{marginLeft: "15px"}}>
-                                <Button variant="primary" className="cardsButton" style={{width: "150px"}}>Înscrie-te</Button>
+                                <Button variant="primary" className="cardsButton" style={{width: "150px"}}>Înscrie-te!</Button>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

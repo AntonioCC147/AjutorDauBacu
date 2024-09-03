@@ -4,7 +4,7 @@ export default function Edition() {
     return (
         <div className="editionContainer roboto">
             <p className="editionTitle">Ediții</p>
-            <p className="editionSubTitle"><i>Aici vei găsi istoricul tuturor edițiilor pe care le-am organizat</i></p>
+            <p className="editionSubTitle"><i>Aici găsești subiectele și baremele edițiilor anterioare</i></p>
             <div>
                 <p className="editionDateTitle">Ediția #1 - Va urma</p>
                 <p className="editionSubjectTitle">

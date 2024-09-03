@@ -36,10 +36,10 @@ export default function Home() {
             <Row className="homeContainerHeroSection d-flex align-items-center justify-content-center">
                 <Col lg={6}>
                     <p className="homeTitle">Ajutor! Dau Bacu'<br/>sare astăzi în ajutorul tău!</p>
-                    <p className="homeSubTitle" >Dacă ești elev în clasa a XII-a și dorești să-ți testezi cunoștințele, dacă vrei
-                        să vezi cât de bine ești pregătit sau să-ți provoci unul dintre prieteni în lupta pentru o notă cât mai
-                        mare, atunci ai ajuns unde trebuie! Echipa noastră te poate ajuta pe această cale, tu trebuind doar să
-                        participi la simulările organizate de către noi, concepute special pentru tine!
+                    <p className="homeSubTitle">Ești elev în clasa a XII-a și te pregătești pentru examenul de Bacalaureat? Ești
+                        pe drumul cel bun, însă cum ar fi să știi exact unde te situezi și ce mai ai de îmbunătățit? Ajutor! Dau
+                        Bacu' îți oferă oportunitatea perfectă de a-ți testa cunoștințele chiar din confortul casei tale, prin
+                        simulări online corectate manual, precum și prin feedback personalizat.
                     </p>
                     <div className="homeButtonContainer">
                         <a href="/inscrie-te">
@@ -58,10 +58,12 @@ export default function Home() {
                 <Col lg={6}>
                     <p className="homeTitle2">De ce să ne alegi pe noi?</p>
                     <p className="homeTitle" style={{marginTop: "50px"}}>Alege calea simplă de a-ți testa cunoștințele!</p>
-                    <p className="homeSubTitle" style={{textAlign: "justify"}}>La început poate să-ți pară greu, însă de la a
-                        gândi până la a pune în practică este doar un singur pas. Simulările organizate de către noi sunt special
-                        concepute pentru a te ajuta în pregătirea examenului de bacalaureat și a-ți oferi o idee generală asupra
-                        nivelului la care te afli și la ce ar mai trebui să îmbunătățești.
+                    <p className="homeSubTitle" style={{textAlign: "justify"}}>Simulările online de Bacalaureat pe care le
+                        organizăm sunt concepute pentru a te sprijini eficient în abordarea examenului, oferindu-ți o imagine
+                        clară a nivelului tău actual și indicii despre aspectele care necesită îmbunătățire. Subiectele noastre
+                        reproduc fidel modelul oficial, asigurând o experiență autentică de examen. În plus, atmosfera creată în
+                        timpul simulărilor imită condițiile reale ale examenului, iar lucrările tale sunt corectate manual de o
+                        comisie formată din doi corectori, pentru a oferi o evaluare corectă și feedback detaliat.
                     </p>
                     <div className="hrefContainer">
                         <a href="/#simulari" className="d-flex align-items-center">
@@ -72,18 +74,18 @@ export default function Home() {
                 </Col>
             </Row>
             <Row className="homeContainerBenefits d-flex align-items-center justify-content-center" >
-                <p className="homeTitle" style={{ textAlign: "center" }}>Iată ce îți putem oferim</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>După cum am spus, de la a gândi până la a pune în practică este doar un singur pas</i></p>
+                <p className="homeTitle" style={{ textAlign: "center" }}>Cum arată o simulare?</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Simularea explicată în pași</i></p>
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle"><b>Pasul 1:</b><br />Susține<br />Simularea</p>
+                        <p className="stepsTitle"><b>Pasul 1:</b><br />Susții<br />Simularea</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Subiect1} />
                         <Card.Body>
                             <Card.Title style={{color: "#293651"}}><b>Subiect</b></Card.Title>
-                            <Card.Text style={{color: "#293651"}}>Subiectele noastre respectă programa oficială și sunt concepute să arate exact ca un subiect realizat de minister.</Card.Text>
+                            <Card.Text style={{color: "#293651"}}>Subiectele noastre respectă cu exactitate programa școlară oficială.</Card.Text>
                             <Button variant="primary" className="cardsButton" onClick={handleShow1}>Arată Subiectul</Button>
                         </Card.Body>
                     </Card>
@@ -105,13 +107,13 @@ export default function Home() {
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle"><b>Pasul 2:</b><br />Primește<br />Baremul</p>
+                        <p className="stepsTitle"><b>Pasul 2:</b><br />Primești<br />Baremul</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Barem1} />
                         <Card.Body>
                             <Card.Title style={{color: "#293651"}}><b>Barem</b></Card.Title>
-                            <Card.Text style={{color: "#293651"}}>Baremul conceput de către noi conține și rezolvările complete pentru a-ți fi mai ușor să te autoevaluezi.</Card.Text>
+                            <Card.Text style={{color: "#293651"}}>Baremul nu conține doar răspunsurile, ci și rezolvările complete.</Card.Text>
                             <Button variant="primary" className="cardsButton" onClick={handleShow2}>Arată Baremul</Button>
                         </Card.Body>
                     </Card>
@@ -134,13 +136,13 @@ export default function Home() {
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle"><b>Pasul 3:</b><br />Primește<br />Feedback</p>
+                        <p className="stepsTitle"><b>Pasul 3:</b><br />Primești<br />Feedback</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Feedback} />
                         <Card.Body>
                             <Card.Title style={{color: "#293651"}}><b>Feedback</b></Card.Title>
-                            <Card.Text style={{color: "#293651"}}>Feedback-ul dat de către noi este unul personalizat și oferă pentru fiecare exercițiu greșit explicații și sfaturi de rezolvare.</Card.Text>
+                            <Card.Text style={{color: "#293651"}}>Subiectul tău va fi corectat manual de o comisie formată din doi corectori.</Card.Text>
                             <a href="/inscrie-te">
                                 <Button variant="primary" className="cardsButton">Participă</Button>
                             </a>
@@ -150,7 +152,7 @@ export default function Home() {
             </Row>
             <Row className="homeContainerPricing text-center" id="simulari">
                 <p className="title2Pricing" style={{ textAlign: "center" }}>Simulări & Prețuri</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Cele mai bune și ieftine simulări așteaptă să fie rezolvate de către tine</i></p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Descoperă simulările noastre</i></p>
                 <div className="containerBoxPricing pricingContainerWrapperVisible">
                     <div class="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Română</p>
@@ -163,10 +165,6 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">exerciții de antrenament</span>
-                        </div>
-                        <div style={{paddingBottom: "15px"}}>
-                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">profil uman / real</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
@@ -175,10 +173,14 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">corectori specializați</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
+                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
                     </div>
                     <div class="cardBoxPricing" style={{marginTop: "25px", marginBottom: "50px"}}>
@@ -192,10 +194,6 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">exerciții de antrenament</span>
-                        </div>
-                        <div style={{paddingBottom: "15px"}}>
-                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">specializarea matematică-informatică</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
@@ -204,10 +202,14 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">corectori specializați</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
+                            <Button className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
                     </div>
                     <div className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
@@ -221,10 +223,6 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">exerciții de antrenament</span>
-                        </div>
-                        <div style={{paddingBottom: "15px"}}>
-                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">profil real</span>
                         </div>
                         <div style={{paddingBottom: "15px"}}>
@@ -233,10 +231,14 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
+                            <span className="cardTextBenefits">corectori specializați</span>
+                        </div>
+                        <div style={{paddingBottom: "15px"}}>
+                            <img src={Verify} className="imageVerify" alt="Verify"/>
                             <span className="cardTextBenefits">feedback personalizat</span>
                         </div>
                         <div className="text-center">
-                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te</Button>
+                            <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
                     </div>
                     <div className="text-center">
@@ -247,15 +249,15 @@ export default function Home() {
                 </div>
             </Row>
             <Row className="homeContainerFAQ" id="faq" style={{marginBottom: "50px"}}>
-                <p className="title2Pricing" style={{ textAlign: "center" }}>Frequently Asked Question</p>
-                <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Iată câteva răspunsuri la cel mai adresate întrebări</i></p>
+                <p className="title2Pricing" style={{ textAlign: "center" }}>FAQ</p>
+                <p className="homeSubTitle" style={{ textAlign: "center" }}><i> Iată câteva răspunsuri la cele mai frecvent adresate întrebări</i></p>
                 <Accordion defaultActiveKey="1" className="accordionContainer">
                     <Accordion.Item eventKey="1" className="accordionCard">
                         <Accordion.Header className="accordionTitle">Cine concepe și corectează simulările?</Accordion.Header>
                         <Accordion.Body>
-                            Simulările sunt concepute și corectate de către studenți specializați în domeniu, respectiv studenți
-                            cu experiență în domenii educaționale, precum voluntariate în cadrul laboratoarelor de la facultate,
-                            meditații sau alte lucruri specifice.
+                            Simulările sunt concepute și corectate de către studenți de la facultăți din domeniu, cu experiență în
+                            activități educaționale precum voluntariate în cadrul laboratoarelor de la facultate, meditații,
+                            simulări etc.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2" className="accordionCard">
@@ -267,8 +269,8 @@ export default function Home() {
                     <Accordion.Item eventKey="3" className="accordionCard">
                         <Accordion.Header className="accordionTitle">Unde se va desfășura simularea?</Accordion.Header>
                         <Accordion.Body>
-                            Simularea se va desfășura în format online. După înscriere veți primi un link de conectare și mai
-                            multe informații despre modul exact de desfășurare a acesteia.
+                            Simularea se va desfășura în format online pe Google Meet. Găsiți în regulament mai multe informații
+                            despre organizarea simulării.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="4" className="accordionCard">
@@ -281,8 +283,7 @@ export default function Home() {
                     <Accordion.Item eventKey="5" className="accordionCard">
                         <Accordion.Header className="accordionTitle">Pot contesta nota primită?</Accordion.Header>
                         <Accordion.Body>
-                            Notele primite nu se pot contesta, însă dacă cineva consideră că totuși nota primită este greșită, ne
-                            poate contacta la adresa de email atașată sau completând formularul din secțiunea de Contact.
+                            Notele primite nu se pot contesta.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="6" className="accordionCard">

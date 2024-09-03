@@ -60,7 +60,7 @@
 }
 
 .blueButton {
-    width: 50px;
+    width: 60px;
 }
 
 .blueButton:hover {
@@ -188,6 +188,8 @@ a {
 }
 
 .cardDescription {
+    text-align: justify;
+
     color: #293651;
 }
 
