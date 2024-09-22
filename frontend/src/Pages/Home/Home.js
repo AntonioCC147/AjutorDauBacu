@@ -154,7 +154,7 @@ export default function Home() {
                 <p className="title2Pricing" style={{ textAlign: "center" }}>Simulări & Prețuri</p>
                 <p className="homeSubTitle" style={{ textAlign: "center" }}><i>Descoperă simulările noastre</i></p>
                 <div className="containerBoxPricing pricingContainerWrapperVisible">
-                    <div class="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
+                    <Col lg={4} className="cardBoxPricing" style={{marginTop: "50px", marginBottom: "25px", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Română</p>
                         <p className="cardPrice">Coming Soon...</p>
                         <p className="cardDescription">Subiectul conține toată materia pentru clasa a XII-a</p>
@@ -182,8 +182,8 @@ export default function Home() {
                         <div className="text-center">
                             <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
-                    </div>
-                    <div class="cardBoxPricing" style={{marginTop: "25px", marginBottom: "50px"}}>
+                    </Col>
+                    <Col lg={4} className="cardBoxPricing" style={{marginTop: "25px", marginBottom: "50px"}}>
                         <p className="cardTitle">Simulare Informatică</p>
                         <p className="cardPrice">35 RON</p>
                         <p className="cardDescription">Subiectul conține toată materia pentru clasele IX-XI</p>
@@ -211,8 +211,8 @@ export default function Home() {
                         <div className="text-center">
                             <Button className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
-                    </div>
-                    <div className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
+                    </Col>
+                    <Col lg={4} className="cardBoxPricing" style={{marginTop: "0%", opacity: "0.5"}}>
                         <p className="cardTitle">Simulare Matematică</p>
                         <p className="cardPrice">Coming Soon...</p>
                         <p className="cardDescription">Subiectul conține toată materia din liceu</p>
@@ -240,12 +240,12 @@ export default function Home() {
                         <div className="text-center">
                             <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
                         </div>
-                    </div>
-                    <div className="text-center">
-                        <a href="/regulament">
-                            <Button variant="primary" className="cardsButton" style={{width: "225px", height: "50px", marginBottom: "50px"}}>Citește Regulamentul</Button>
-                        </a>
-                    </div>
+                    </Col>
+                </div>
+                <div className="text-center">
+                    <a href="/regulament">
+                        <Button variant="primary" className="cardsButton" style={{width: "225px", height: "50px", marginBottom: "50px"}}>Citește Regulamentul</Button>
+                    </a>
                 </div>
             </Row>
             <Row className="homeContainerFAQ" id="faq" style={{marginBottom: "50px"}}>
