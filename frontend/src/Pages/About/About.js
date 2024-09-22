@@ -20,20 +20,20 @@ export default function About() {
                 <Row className="justify-content-center align-items-center" style={{marginTop: "-300px", paddingLeft: "15%", paddingRight: "15%"}}>
                     <Col lg={6} md={12} className="d-flex justify-content-center mb-4">
                         <Card style={{ width: '20rem' }}>
-                            <Card.Img variant="top" src={Toni} />
+                            <Card.Img variant="top" src={Toni}/>
                             <Card.Body>
                                 <Card.Title className="staffTitle">Crantea Antonio-Cristian</Card.Title>
                                 <Card.Text className="staffSubTitle">
-                                    <p className="staffSubSubTitle">Student în anul III la Facultatea de Automatică și Calculatoare</p>
+                                    <p className="staffSubSubTitle">Profesor de Informatică & TIC la liceu</p>
+                                    <p className="staffSubSubTitle">Student în anul III la Facultatea de Automatică și Calculatoare & în anul I la Facultatea de Matematică și Informatică</p>
                                     <p className="staffSubSubTitle">Asistent universitar (voluntar) în cadrul laboratoarelor de la facultate</p>
-                                    <p className="staffSubSubTitle">A obținut nota 10 la Informatică în cadrul examenului de Bacalaureat</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col lg={6} md={12} className="d-flex justify-content-center mb-4">
                         <Card style={{ width: '20rem' }}>
-                            <Card.Img variant="top" src={Roberto} />
+                            <Card.Img variant="top" src={Roberto}/>
                             <Card.Body>
                                 <Card.Title className="staffTitle">Loțan Roberto-Gabriel</Card.Title>
                                 <Card.Text className="staffSubTitle">
