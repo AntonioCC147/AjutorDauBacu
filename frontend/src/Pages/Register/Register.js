@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import Swal from 'sweetalert2'
 import * as Yup from 'yup';
@@ -26,6 +27,26 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function Register() {
+    const [totalPrice, setTotalPrice] = useState(35);
+
+    const handleSimulareChange = (event) => {
+        const selectedPrice = event.target.value;
+    
+        switch (selectedPrice) {
+            case "Option1":
+                setTotalPrice(35);
+                break;
+            case "Option2":
+                setTotalPrice(60);
+                break;
+            case "Option3":
+                setTotalPrice(75);
+                break;
+            default:
+                setTotalPrice(35);
+        }
+      };
+
     return (
         <div className="registerContainer">
             <p className="registerTitle">Înscrie-te!</p>
@@ -46,22 +67,32 @@ export default function Register() {
                 <br/>
                 <p className="registerContainerTitle">Detalii simulare:</p>
                 <p className="registerContainerSubTitle">
-                    Participanții vor primi link-ul de acces și se vor conecta la întâlnirea online în jurul orei 9:30.  
+                    1. Participanții vor primi link-ul de acces și se vor conecta la întâlnirea online în jurul orei 9:30.  
                 </p>
                 <p className="registerContainerSubTitle">
-                    Simularea va începe la ora 10:00 și va dura 3 ore.
+                    2. Simularea va începe la ora 10:00 și va dura 3 ore.
                 </p>
                 <p className="registerContainerSubTitle">
-                    După încheierea timpului alocat rezolvării subiectelor, participanții vor avea 30 de minute la dispoziție
+                    3. După încheierea timpului alocat rezolvării subiectelor, participanții vor avea 30 de minute la dispoziție
                     pentru a scana toate foile ce conțin rezolvările subiectelor și a le încărca în formularul pentru răspunsuri.
                 </p>
                 <p className="registerContainerSubTitle">
-                    În urma participării la simulare, candidații primesc rezultatul obținut, poziția în clasament și feedback
+                    4. În urma participării la simulare, candidații primesc rezultatul obținut, poziția în clasament și feedback
                     personalizat pentru fiecare exercițiu greșit, sub forma unui email la adresa folosită la înscriere, în termen
                     de maxim 10 zile.
                 </p>
                 <br/>
-                <p className="registerContainerTitle">Formular de înscriere:</p>
+                <p className="registerContainerTitle">Detalii FeedBack Standard:</p>
+                <p className="registerContainerSubTitle">
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                </p>
+                <br/>
+                <p className="registerContainerTitle">Detalii FeedBack Live:</p>
+                <p className="registerContainerSubTitle">
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                </p>
+                <br/>
+                <p className="registerContainerTitle">Formular de înscriere: zz.ll.aaaa</p>
                 <Row className="formContainer">
                     <Formik
                         initialValues={{
@@ -123,10 +154,12 @@ export default function Register() {
                                         <Row>
                                             <Col lg={7}>
                                                 <p className="subTitleContact2">Opțiuni simulare:</p>
-                                                <Field name="color" component="select">
-                                                    <option value="Option1">Informatică (Matematică-Informatică) - 35 RON</option>
-                                                    <option disabled value="Option3">Limba și Literatura Română (Uman / Real) - Va urma</option>
-                                                    <option disabled value="Option2">Matematică (Matematică-Informatică) - Va urma</option>
+                                                <Field name="color" as="select" onChange={handleSimulareChange}>
+                                                    <option value="Option1">[Simulare] - Informatică (Matematică-Informatică) - 35 RON</option>
+                                                    <option value="Option2">[Simulare + Feedback Standard] - Informatică (Matematică-Informatică) - 60 RON</option>
+                                                    <option value="Option3">[Simulare + Feedback Live] - Informatică (Matematică-Informatică) - 75 RON</option>
+                                                    <option disabled value="Option4">[Simulare] Limba și Literatura Română (Uman / Real) - Va urma</option>
+                                                    <option disabled value="Option5">[Simulare] Matematică (Matematică-Informatică) - Va urma</option>
                                                 </Field>
                                             </Col>
                                         </Row>
@@ -142,7 +175,7 @@ export default function Register() {
                                         </Row>
                                     </Col>
                                     <Col lg={4} className="d-flex justify-content-center">
-                                        <p className="totalPriceContact2 align-self-end">Total: 35 RON</p>
+                                        <p className="totalPriceContact2 align-self-end">Total: {totalPrice} RON</p>
                                     </Col>
                                 </Row>
                                 <div className="text-center" style={{marginTop: "25px"}}>

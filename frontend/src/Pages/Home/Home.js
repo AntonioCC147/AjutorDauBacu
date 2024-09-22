@@ -136,12 +136,12 @@ export default function Home() {
                 <Col lg={4} className="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                     <div className="text-center text-lg-right">
                         <img src={RightArrow} className="rightArrow" alt="RightArrow" />
-                        <p className="stepsTitle"><b>Pasul 3:</b><br />Primești<br />Feedback</p>
+                        <p className="stepsTitle"><b>Pasul 3:</b><br />Corectarea<br />Subiectului</p>
                     </div>
                     <Card className="homeCards text-center" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={Feedback} />
                         <Card.Body>
-                            <Card.Title style={{color: "#293651"}}><b>Feedback</b></Card.Title>
+                            <Card.Title style={{color: "#293651"}}><b>Corectare</b></Card.Title>
                             <Card.Text style={{color: "#293651"}}>Subiectul tău va fi corectat manual de o comisie formată din doi corectori.</Card.Text>
                             <a href="/inscrie-te">
                                 <Button variant="primary" className="cardsButton">Participă</Button>
@@ -177,7 +177,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">feedback personalizat</span>
+                            <span className="cardTextBenefits">clasament anonim</span>
                         </div>
                         <div className="text-center">
                             <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
@@ -206,7 +206,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">feedback personalizat</span>
+                            <span className="cardTextBenefits">clasament anonim</span>
                         </div>
                         <div className="text-center">
                             <Button className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
@@ -235,7 +235,7 @@ export default function Home() {
                         </div>
                         <div style={{paddingBottom: "15px"}}>
                             <img src={Verify} className="imageVerify" alt="Verify"/>
-                            <span className="cardTextBenefits">feedback personalizat</span>
+                            <span className="cardTextBenefits">clasament anonim</span>
                         </div>
                         <div className="text-center">
                             <Button disabled className="buttonPricing" href="/inscrie-te">Înscrie-te!</Button>
@@ -287,10 +287,11 @@ export default function Home() {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="6" className="accordionCard">
-                        <Accordion.Header className="accordionTitle">Cred că am găsit o greșeală într-un subiect, ce pot face?</Accordion.Header>
+                        <Accordion.Header className="accordionTitle">Care este diferența dintre feedback personalizat standard și feedback personalizat live?</Accordion.Header>
                         <Accordion.Body>
-                            Dacă consideri că ai găsit o greșeală într-un subiect, atunci ne poți scrie la adresa de email atașată
-                            sau completând formularul din secțiunea de Contact.
+                            Feedback-ul personalizat standard constă în observații scrise despre exercițiile greșite.<br/>
+                            Feedback-ul personalizat live implică o întâlnire online 1 la 1 în care elevul își va vedea lucrarea
+                            corectată și va putea adresa întrebări despre aceasta.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="7" className="accordionCard">
